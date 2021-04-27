@@ -48,51 +48,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     boolean isExit = false;
     private TextView teacher, student, course, attandance, logout;
     private TextView teacherhome, students, takeattendence, viewattandance, changepassword;
-    private static final String CAPTURED_PHOTO_PATH_KEY = "mCapturedPhotoPathKey";
-    private static final String CAPTURED_PHOTO_URI_KEY = "mCapturedPhotoUriKey";
-    private String mCapturedPhotoPath = null;
-    private Uri mCapturedPhotoUri = null;
     private String newLoginId = "";
     private String login_id = "";
     public static FloatingActionButton floatingActionButton;
 
-    public String getmCapturedPhotoPath() {
-        return mCapturedPhotoPath;
-    }
 
-    public void setmCapturedPhotoPath(String mCapturedPhotoPath) {
-        this.mCapturedPhotoPath = mCapturedPhotoPath;
-    }
 
-    public Uri getmCapturedPhotoUri() {
-        return mCapturedPhotoUri;
-    }
-
-    public void setmCapturedPhotoUri(Uri mCapturedPhotoUri) {
-        this.mCapturedPhotoUri = mCapturedPhotoUri;
-    }
-
-    @Override
-    protected void onSaveInstanceState(Bundle outState) {
-        if (mCapturedPhotoPath != null) {
-            outState.putString(CAPTURED_PHOTO_PATH_KEY, mCapturedPhotoPath);
-        }
-        if (mCapturedPhotoUri != null) {
-            outState.putString(CAPTURED_PHOTO_URI_KEY, mCapturedPhotoUri.toString());
-        }
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(Bundle savedInstanceState) {
-        if (savedInstanceState.containsKey(CAPTURED_PHOTO_PATH_KEY)) {
-            mCapturedPhotoPath = savedInstanceState.getString(CAPTURED_PHOTO_PATH_KEY);
-        }
-        if (savedInstanceState.containsKey(CAPTURED_PHOTO_URI_KEY)) {
-            mCapturedPhotoUri = Uri.parse(savedInstanceState.getString(CAPTURED_PHOTO_URI_KEY));
-        }
-        super.onRestoreInstanceState(savedInstanceState);
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
