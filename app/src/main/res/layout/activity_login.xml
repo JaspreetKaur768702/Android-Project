@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/whitecolor">
+
+    <com.google.android.material.textview.MaterialTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Welcome To "
+    android:textColor="@color/app_background_color"
+    android:textSize="20sp"
+    android:padding="4dp"
+    android:fontFamily="@font/poppins_bold"
+    android:layout_marginTop="48dp"
+    android:gravity="center"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="College Attendence Management System"
+        android:textColor="@color/app_background_color"
+        android:textSize="20sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/whitecolor"
+        app:shapeAppearance="@style/Widget.AppCompat.Button"
+        android:textColorHint="@color/app_background_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:text=""
+            android:textColorHint="@color/app_background_color"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        app:hintEnabled="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/whitecolor"
+        app:shapeAppearance="@style/Widget.AppCompat.Button"
+        android:textColorHint="@color/app_background_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColorHint="@color/app_background_color"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/bt_forgot_password"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotPassword"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        android:textColor="@color/black"
+        android:paddingTop="0dp"
+        android:visibility="gone"
+        app:rippleColor="@android:color/transparent"
+        app:layout_constraintEnd_toStartOf="@+id/gl_end"
+        app:layout_constraintTop_toBottomOf="@+id/input_layout_password" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:entries="@array/loginType"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:background="@drawable/react_shape"
+        android:textColor="@color/app_background_color"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        android:textColor="@android:color/white"
+        android:textAllCaps="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:shapeAppearance="@style/Widget.AppCompat.Button"
+        android:fontFamily="@font/poppins_bold"
+        android:backgroundTint="@color/app_background_color"
+         />
+
+
+
+</LinearLayout>

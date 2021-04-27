@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/whitecolor"
+            app:shapeAppearance="@style/Widget.AppCompat.Button"
+            android:textColorHint="@color/app_background_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edstartDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Start Date"
+                android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                android:inputType="text"
+                android:textColorHint="@color/app_background_color"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_baseline_calendar_today_24" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_endDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/whitecolor"
+            app:shapeAppearance="@style/Widget.AppCompat.Button"
+            android:textColorHint="@color/app_background_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edendDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="End Date"
+                android:drawableEnd="@drawable/ic_baseline_calendar_today_24"
+                android:inputType="text"
+                android:textColorHint="@color/app_background_color"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_baseline_calendar_today_24" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_endDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/whitecolor"
+            app:shapeAppearance="@style/Widget.AppCompat.Button"
+            android:textColorHint="@color/app_background_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="20dp">
+
+            <Button
+                android:text="Get Student list"
+                android:id="@+id/getstudentbydate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_endDatess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/whitecolor"
+            app:shapeAppearance="@style/Widget.AppCompat.Button"
+            android:textColorHint="@color/app_background_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginLeft="20dp">
+            <Button
+                android:text="Select Course code"
+                android:id="@+id/get_courses"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/simpleSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp" />
+
+
+        <!--<com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Select Course"
+            android:padding="8dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Select Student"
+            android:padding="8dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/get_someStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Get Attendence"
+            android:padding="8dp"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/marked_students"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layoutCourseCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/whitecolor"
+        app:shapeAppearance="@style/Widget.AppCompat.Button"
+        android:textColorHint="@color/app_background_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edCourseCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Course Code"
+            android:inputType="text"
+            android:textColorHint="@color/app_background_color"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layoutCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/whitecolor"
+        app:shapeAppearance="@style/Widget.AppCompat.Button"
+        android:textColorHint="@color/app_background_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Course Name"
+            android:inputType="text"
+            android:textColorHint="@color/app_background_color"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layoutTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/whitecolor"
+        app:shapeAppearance="@style/Widget.AppCompat.Button"
+        android:textColorHint="@color/app_background_color"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edTeacher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Teacher"
+            android:inputType="text"
+            android:textColorHint="@color/app_background_color"
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/courseaddbutton_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:text="Submit"
+        android:padding="8dp"/>
+</LinearLayout>

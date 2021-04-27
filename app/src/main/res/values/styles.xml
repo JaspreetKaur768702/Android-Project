@@ -1,0 +1,71 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_background_color</item>
+        <item name="colorPrimaryDark">@color/app_background_color</item>
+        <item name="colorAccent">@color/app_background_color</item>
+    </style>
+<!--    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">-->
+<!--        <item name="android:windowBackground">@drawable/img_bg</item>-->
+<!--    </style>-->
+<!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="black">
+        <item name="android:fontFamily">@fonts/poppins_black</item>
+    </style>
+    <style name="blackitalic">
+        <item name="android:fontFamily">@fonts/poppins_blackitalic</item>
+    </style>
+    <style name="bold">
+        <item name="android:fontFamily">@fonts/poppins_bold</item>
+    </style>
+    <style name="bolditalic">
+        <item name="android:fontFamily">@fonts/poppins_bolditalic</item>
+    </style>
+    <style name="extrabold">
+        <item name="android:fontFamily">@fonts/poppins_extrabold</item>
+    </style>
+    <style name="extrabolditalic">
+        <item name="android:fontFamily">@fonts/poppins_extrabolditalic</item>
+    </style>
+
+    <style name="extraitalic">
+        <item name="android:fontFamily">@fonts/poppins_extralight</item>
+    </style>
+
+    <style name="extralightitalic">
+        <item name="android:fontFamily">@fonts/poppins_extrlLightitalic</item>
+    </style>
+    <style name="lightitalic">
+        <item name="android:fontFamily">@fonts/poppins_lightitalic</item>
+    </style>
+
+    <style name="medium">
+        <item name="android:fontFamily">@fonts/poppins_medium.ttf</item>
+    </style>
+
+    <style name="mediumitalic">
+        <item name="android:fontFamily">@fonts/poppins_mediumitalic</item>
+    </style>
+    <style name="regular">
+        <item name="android:fontFamily">@fonts/poppins_regular</item>
+    </style>
+    <style name="regularitalic">
+        <item name="android:fontFamily">@fonts/poppins_regularitalic</item>
+    </style>
+    <style name="semiBold">
+        <item name="android:fontFamily">@fonts/poppins_semiBold</item>
+    </style>
+    <style name="semiBolditalic">
+        <item name="android:fontFamily">@fonts/poppins_semibolditalic</item>
+    </style>
+    <style name="thin">
+        <item name="android:fontFamily">@fonts/poppins_thin</item>
+    </style>
+    <style name="thinitalic">
+        <item name="android:fontFamily">@fonts/poppins_thinitalic</item>
+    </style>
+</resources>
